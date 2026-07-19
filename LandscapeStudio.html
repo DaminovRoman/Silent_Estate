@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Silent Estate — Ландшафтная архитектура частных резиденций</title>
+<meta name="description" content="Мы проектируем ландшафты, где архитектура, природа и человек существуют как единое целое. Приватные сады, водные зеркала, архитектурное озеленение для частных резиденций.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Silent Estate — Ландшафтная архитектура частных резиденций">
+<meta property="og:description" content="Пространства, которые становятся частью вашей жизни. Ландшафтная архитектура для частных резиденций мирового уровня.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Silent Estate">
+
+<!-- Preconnect / Performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Display serif — Cormorant Garamond: high-contrast editorial Garamond
+     with full Cyrillic support, replacing the safe system-serif fallback.
+     Weights: 300/400 body-ish display, 500/600 for numerals & emphasis,
+     600 italic for the exclusivity-strip figures. display=swap avoids
+     invisible text on slow connections; the CSS var already has the
+     Georgia/Palatino stack as a same-shape fallback while this loads. -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#F4F1EB">
+<meta name="color-scheme" content="light">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Silent Estate",
+  "description": "Студия ландшафтной архитектуры частных резиденций",
+  "priceRange": "$$$$",
+  "areaServed": "RU",
+  "serviceType": "Ландшафтная архитектура"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Silent Estate",
+  "image": "",
+  "description": "Проектирование приватных ландшафтов для частных резиденций",
+  "telephone": "+7 (000) 000-00-00"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Сколько длится создание пространства",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "От исследования участка до авторского надзора за реализацией процесс занимает от нескольких месяцев до полутора лет — в зависимости от масштаба территории."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "С какой площади участка вы работаете",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Мы рассматриваем территории от 15 соток — пространства, где ландшафт способен стать полноценным продолжением архитектуры дома."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Главная", "item": "#hero"},
+    {"@type": "ListItem", "position": 2, "name": "Философия", "item": "#philosophy"},
+    {"@type": "ListItem", "position": 3, "name": "Проекты", "item": "#gallery"},
+    {"@type": "ListItem", "position": 4, "name": "Процесс", "item": "#process"},
+    {"@type": "ListItem", "position": 5, "name": "Контакты", "item": "#contact"}
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="LandscapeStudio.css">
+</head>
+<body class="is-loading">
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" data-preloader aria-hidden="true">
+  <div class="preloader__inner">
+    <div class="preloader__mark">
+      <span class="preloader__mark-ghost">Silent&nbsp;Estate</span>
+      <span class="preloader__mark-fill">Silent&nbsp;Estate</span>
+    </div>
+    <div class="preloader__meter">
+      <div class="preloader__rule">
+        <div class="preloader__rule-fill" data-preloader-fill></div>
+      </div>
+      <span class="preloader__percent" data-preloader-percent>0%</span>
+    </div>
+    <p class="preloader__label">Ландшафтная архитектура частных&nbsp;резиденций</p>
+  </div>
+  <div class="preloader__corner preloader__corner--tl" aria-hidden="true"></div>
+  <div class="preloader__corner preloader__corner--br" aria-hidden="true"></div>
+</div>
+<!-- Fail-safe for JS-disabled visits: body.is-loading (which hides the
+     nav/main and locks scroll — see CSS) is only ever removed by the
+     preloader's own JS module. Without this rule, a visitor with
+     scripting off would see a permanently frozen loading screen and
+     nothing else. -->
+<noscript><style>
+  .preloader { display: none !important; }
+  body.is-loading { overflow: visible !important; }
+  body.is-loading .nav, body.is-loading main { visibility: visible !important; }
+</style></noscript>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- ============ PROGRESS THREAD (signature element) ============ -->
+<div class="estate-thread" aria-hidden="true">
+  <div class="estate-thread__fill"></div>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" data-nav>
+  <div class="nav__row">
+    <a href="#hero" class="nav__mark">Silent&nbsp;Estate</a>
+    <nav class="nav__links" aria-label="Основная навигация">
+      <a href="#philosophy">Философия</a>
+      <a href="#gallery">Проекты</a>
+      <a href="#process">Процесс</a>
+      <a href="#studio">Студия</a>
+      <a href="#contact" class="nav__cta">Обсудить участок</a>
+    </nav>
+    <button class="nav__burger magnetic" data-burger data-magnetic aria-label="Открыть меню" aria-expanded="false">
+      <span class="nav__burger-label">Меню</span>
+      <span class="nav__burger-lines" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" data-mobile-menu>
+  <button class="mobile-menu__close magnetic" data-mobile-close data-magnetic aria-label="Закрыть меню">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="1"/></svg>
+  </button>
+  <nav aria-label="Мобильная навигация">
+    <a href="#philosophy" data-menu-link><span class="mobile-menu__num">01</span>Философия</a>
+    <a href="#gallery" data-menu-link><span class="mobile-menu__num">02</span>Проекты</a>
+    <a href="#process" data-menu-link><span class="mobile-menu__num">03</span>Процесс</a>
+    <a href="#offerings" data-menu-link><span class="mobile-menu__num">04</span>Пространства</a>
+    <a href="#stories" data-menu-link><span class="mobile-menu__num">05</span>Истории</a>
+    <a href="#studio" data-menu-link><span class="mobile-menu__num">06</span>Студия</a>
+    <a href="#faq" data-menu-link><span class="mobile-menu__num">07</span>Вопросы</a>
+    <a href="#contact" data-menu-link><span class="mobile-menu__num">08</span>Контакты</a>
+  </nav>
+</div>
+
+<main>
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="hero" data-parallax-root>
+  <div class="hero__media" data-parallax="0.15" role="img" aria-label="Панорама современной виллы на закате, отражающейся в зеркальном бассейне">
+    <div class="gradient-scene gradient-scene--hero">
+      <!-- PHOTO SLOT — villa + reflecting pool at golden hour, 2400px+ wide.
+           Set src to a licensed photograph (own shoot, or a paid/licensed
+           stock file). Until src is set, the tonal gradient behind this
+           <img> is what's visible — the layout never breaks either way. -->
+      <img class="gradient-scene__photo is-loaded" src="img/1.png" data-scene-photo loading="eager" alt="">
+    </div>
+    <div class="hero__media-veil"></div>
+  </div>
+
+  <div class="hero__grain" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <p class="eyebrow hero__eyebrow reveal-up" data-reveal>Ландшафтная архитектура частных&nbsp;резиденций</p>
+    <h1 class="hero__title">
+      <span class="reveal-line" data-reveal><span>Пространства, которые</span></span>
+      <span class="reveal-line" data-reveal><span><em>становятся частью</em></span></span>
+      <span class="reveal-line" data-reveal><span>вашей жизни</span></span>
+    </h1>
+    <p class="hero__subtitle reveal-up" data-reveal>
+      Индивидуальная архитектура ландшафта для частных резиденций
+      с бюджетом территории от&nbsp;<strong>15&nbsp;млн&nbsp;₽</strong>.
+    </p>
+    <div class="hero__actions reveal-up" data-reveal>
+      <a href="#gallery" class="btn btn--ghost magnetic" data-magnetic>
+        <span>Смотреть проекты</span>
+      </a>
+      <a href="#contact" class="btn btn--solid magnetic" data-magnetic>
+        <span>Обсудить участок</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero__scroll-cue" aria-hidden="true">
+    <span class="hero__scroll-line"></span>
+    <span class="hero__scroll-text">Прокрутите</span>
+  </div>
+</section>
+
+<!-- ============ EXCLUSIVITY BAND ============ -->
+<section class="exclusivity" aria-label="Студия в цифрах">
+  <div class="exclusivity__inner">
+    <div class="exclusivity__item" data-reveal>
+      <span class="exclusivity__stat"><span class="exclusivity__stat-num">12</span></span>
+      <h3>Проектов в&nbsp;год — не больше, чтобы каждому хватило авторского внимания</h3>
+    </div>
+    <div class="exclusivity__item" data-reveal>
+      <span class="exclusivity__stat"><span class="exclusivity__stat-num">15</span><span class="exclusivity__stat-unit">млн&nbsp;₽</span></span>
+      <h3>От&nbsp;такого бюджета территории начинается работа студии</h3>
+    </div>
+    <div class="exclusivity__item" data-reveal>
+      <span class="exclusivity__stat"><span class="exclusivity__stat-unit exclusivity__stat-unit--lead">Полный</span><span class="exclusivity__stat-num exclusivity__stat-num--word">цикл</span></span>
+      <h3>Под&nbsp;ключ — от&nbsp;исследования участка до&nbsp;авторского надзора</h3>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. PHILOSOPHY ============ -->
+<section class="philosophy" id="philosophy">
+  <div class="philosophy__inner">
+    <p class="eyebrow" data-reveal>Философия</p>
+
+    <div class="philosophy__statement">
+      <p class="philosophy__line" data-reveal>
+        Дом заканчивается не на пороге.
+      </p>
+      <p class="philosophy__line philosophy__line--muted" data-reveal>
+        Он продолжается в тишине двора, в тени старого дерева,
+        в свете, который ложится на камень ближе к вечеру.
+      </p>
+    </div>
+
+    <div class="philosophy__grid">
+      <div class="philosophy__media" data-parallax="0.08" data-reveal-media>
+        <div class="gradient-scene gradient-scene--philosophy-1">
+          <!-- PHOTO SLOT — private garden path in soft morning light, stone
+               and greenery, portrait orientation, 1600×2000px+ -->
+          <img class="gradient-scene__photo is-loaded" src="img/2.png" data-scene-photo alt="">
+        </div>
+      </div>
+
+      <div class="philosophy__text">
+        <p data-reveal>
+          Пространство вокруг дома формирует то, как проходит день.
+          Утренний свет через крону. Тишина у воды. Тень в жаркий час.
+          Это не элементы благоустройства — это структура жизни, которую мы проектируем
+          с той же точностью, что и архитектор проектирует стены.
+        </p>
+        <p data-reveal>
+          Сад не украшает архитектуру. Он завершает её — становится вторым фасадом дома,
+          обращённым к небу, воде и времени суток.
+        </p>
+      </div>
+    </div>
+
+    <div class="philosophy__media philosophy__media--wide" data-parallax="0.1" data-reveal-media>
+      <div class="gradient-scene gradient-scene--philosophy-2">
+        <!-- PHOTO SLOT — wide architectural terrace/stone detail at dusk,
+             21:9 crop, 2400×1000px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/3.png" data-scene-photo alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="gallery__intro">
+    <p class="eyebrow" data-reveal>Проекты</p>
+    <h2 class="section-title" data-reveal>Каждый участок рассказывает&nbsp;свою историю</h2>
+  </div>
+
+  <!-- Project story 1 -->
+  <article class="project-story" data-project>
+    <div class="project-story__media" data-parallax="0.06" data-reveal-media>
+      <div class="gradient-scene gradient-scene--project-1">
+        <!-- PHOTO SLOT — residence among mature pines, full-bleed hero shot,
+             2400×2200px+, golden-hour or overcast even light -->
+        <img class="gradient-scene__photo is-loaded" src="img/4.png" data-scene-photo alt="">
+      </div>
+      <div class="project-story__veil"></div>
+    </div>
+    <div class="project-story__frame">
+      <div class="project-story__meta" data-reveal>
+        <span class="project-story__index">01</span>
+        <span class="project-story__location">Резиденция у соснового леса · 2.4&nbsp;га</span>
+      </div>
+      <h3 class="project-story__title" data-reveal>Тихий&nbsp;периметр</h3>
+      <p class="project-story__excerpt" data-reveal>
+        Участок, где сосны стояли до дома, диктовал каждое решение.
+        Мы сохранили линию леса и провели дорожки так, чтобы ни одно
+        дерево старше тридцати лет не покинуло свой участок земли.
+      </p>
+      <button class="link-arrow magnetic" data-magnetic data-open-project="1">
+        <span>Открыть проект</span>
+        <svg width="22" height="10" viewBox="0 0 22 10" fill="none" aria-hidden="true"><path d="M1 5H21M21 5L17 1M21 5L17 9" stroke="currentColor" stroke-width="1"/></svg>
+      </button>
+    </div>
+  </article>
+
+  <!-- Project story 2 -->
+  <article class="project-story" data-project>
+    <div class="project-story__media" data-parallax="0.06" data-reveal-media>
+      <div class="gradient-scene gradient-scene--project-2">
+        <!-- PHOTO SLOT — long reflecting pool / water mirror at dusk merging
+             with the horizon line, 2400×2200px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/5.png" data-scene-photo alt="">
+      </div>
+      <div class="project-story__veil"></div>
+    </div>
+    <div class="project-story__frame">
+      <div class="project-story__meta" data-reveal>
+        <span class="project-story__index">02</span>
+        <span class="project-story__location">Дом у воды · 1.1&nbsp;га</span>
+      </div>
+      <h3 class="project-story__title" data-reveal>Зеркало&nbsp;и&nbsp;камень</h3>
+      <p class="project-story__excerpt" data-reveal>
+        Водное зеркало длиной сорок метров продолжает линию террасы
+        и растворяет границу между домом и горизонтом. Вечером
+        поверхность становится вторым небом.
+      </p>
+      <button class="link-arrow magnetic" data-magnetic data-open-project="2">
+        <span>Открыть проект</span>
+        <svg width="22" height="10" viewBox="0 0 22 10" fill="none" aria-hidden="true"><path d="M1 5H21M21 5L17 1M21 5L17 9" stroke="currentColor" stroke-width="1"/></svg>
+      </button>
+    </div>
+  </article>
+
+  <!-- Project story 3 -->
+  <article class="project-story" data-project>
+    <div class="project-story__media" data-parallax="0.06" data-reveal-media>
+      <div class="gradient-scene gradient-scene--project-3">
+        <!-- PHOTO SLOT — family residence courtyard, evening fire/lighting
+             scene, 2400×2200px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/6.png" data-scene-photo alt="">
+      </div>
+      <div class="project-story__veil"></div>
+    </div>
+    <div class="project-story__frame">
+      <div class="project-story__meta" data-reveal>
+        <span class="project-story__index">03</span>
+        <span class="project-story__location">Семейная резиденция · 3.8&nbsp;га</span>
+      </div>
+      <h3 class="project-story__title" data-reveal>Три&nbsp;двора</h3>
+      <p class="project-story__excerpt" data-reveal>
+        Территория разделена на три двора с разным характером света:
+        утренний — для завтрака, полуденный — для тени, вечерний —
+        для тишины у костра. Каждый двор живёт своим временем суток.
+      </p>
+      <button class="link-arrow magnetic" data-magnetic data-open-project="3">
+        <span>Открыть проект</span>
+        <svg width="22" height="10" viewBox="0 0 22 10" fill="none" aria-hidden="true"><path d="M1 5H21M21 5L17 1M21 5L17 9" stroke="currentColor" stroke-width="1"/></svg>
+      </button>
+    </div>
+  </article>
+</section>
+
+<!-- ============ 4. PROJECT DETAIL OVERLAY ============ -->
+<div class="project-detail" data-project-detail aria-hidden="true">
+  <div class="project-detail__scroll">
+    <button class="project-detail__close magnetic" data-magnetic data-close-project aria-label="Закрыть проект">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4L20 20M20 4L4 20" stroke="currentColor" stroke-width="1"/></svg>
+    </button>
+
+    <div class="project-detail__hero">
+      <div class="gradient-scene" data-project-hero>
+        <!-- PHOTO SLOT — full-bleed opening shot for whichever project is
+             open; JS swaps src per project via data-project-hero-photo -->
+        <img class="gradient-scene__photo" data-project-hero-photo alt="">
+      </div>
+      <div class="project-detail__hero-content">
+        <span class="project-detail__eyebrow" data-project-index>01</span>
+        <h2 class="project-detail__title" data-project-title>Тихий периметр</h2>
+        <p class="project-detail__location" data-project-location>Резиденция у соснового леса · 2.4 га</p>
+      </div>
+    </div>
+
+    <div class="project-detail__body">
+      <div class="project-detail__row">
+        <div class="project-detail__col">
+          <h3 class="project-detail__label">Мастер<span class="no-flourish">-</span>план</h3>
+          <p data-project-text="masterplan">Территория организована вокруг существующего леса: дом смещён к северной границе, оставляя южный склон полностью под сад и террасы, обращённые к закату.</p>
+        </div>
+        <div class="project-detail__media" data-reveal-media>
+          <div class="gradient-scene gradient-scene--detail-a">
+            <!-- PHOTO SLOT — site plan view or aerial of the garden layout,
+                 1600×1300px+ -->
+            <img class="gradient-scene__photo" data-scene-photo data-detail-masterplan-photo alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="project-detail__row project-detail__row--reverse">
+        <div class="project-detail__col">
+          <h3 class="project-detail__label">Материалы</h3>
+          <p data-project-text="materials">Известняк ручной тёски для дорожек, состаренный дуб для настилов террас, необработанный гранит для подпорных стен — материалы, которые темнеют и стареют вместе с домом.</p>
+        </div>
+        <div class="project-detail__media" data-reveal-media>
+          <div class="gradient-scene gradient-scene--detail-b">
+            <!-- PHOTO SLOT — close-up of natural stone / limestone / oak
+                 decking texture, 1600×1300px+ -->
+            <img class="gradient-scene__photo" data-scene-photo data-detail-materials-photo alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="project-detail__row">
+        <div class="project-detail__col">
+          <h3 class="project-detail__label">Освещение</h3>
+          <p data-project-text="lighting">Свет скрыт в самой архитектуре — под ступенями, в основании деревьев, вдоль кромки воды. К десяти вечера территория растворяется в свете без единого видимого источника.</p>
+        </div>
+        <div class="project-detail__media" data-reveal-media>
+          <div class="gradient-scene gradient-scene--detail-c">
+            <!-- PHOTO SLOT — architectural night lighting, hidden fixtures
+                 along steps/water edge, 1600×1300px+ -->
+            <img class="gradient-scene__photo" data-scene-photo data-detail-lighting-photo alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="project-detail__meta-strip">
+        <div><span>Растения</span><p>127 видов, 40% — существующие на участке</p></div>
+        <div><span>Реализация</span><p>14 месяцев</p></div>
+        <div><span>Надзор</span><p>Авторский, ежемесячный</p></div>
+      </div>
+
+      <div class="project-detail__closing" data-reveal-media>
+        <div class="gradient-scene gradient-scene--detail-final">
+          <!-- PHOTO SLOT — wide closing shot, full garden at blue hour,
+               2400×1200px+ -->
+          <img class="gradient-scene__photo" data-scene-photo data-detail-final-photo alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 5. PROCESS ============ -->
+<section class="process" id="process">
+  <div class="process__intro">
+    <p class="eyebrow" data-reveal>Как создаётся пространство</p>
+    <h2 class="section-title" data-reveal>Семь&nbsp;этапов, ни&nbsp;один&nbsp;из&nbsp;которых нельзя пропустить</h2>
+  </div>
+
+  <ol class="process__list">
+    <li class="process__item process__item--open" data-reveal>
+      <span class="process__num">01</span>
+      <div class="process__content">
+        <h3>Исследование участка</h3>
+        <p>Рельеф, грунт, розы ветров, существующие деревья, направление света в разное время года — прежде чем предложить решение, мы изучаем то, что уже есть.</p>
+      </div>
+    </li>
+    <li class="process__item" data-reveal>
+      <span class="process__num">02</span>
+      <div class="process__content">
+        <h3>Концепция</h3>
+        <p>Идея пространства формулируется на языке сценариев: как здесь будет ощущаться утро, где будет тень в июле, куда упадёт взгляд из окна кабинета.</p>
+      </div>
+    </li>
+    <li class="process__item" data-reveal>
+      <span class="process__num">03</span>
+      <div class="process__content">
+        <h3>Архитектура сада</h3>
+        <p>Геометрия дорожек, терас и водных объектов прорабатывается в прямом диалоге с архитектурой дома — как продолжение одного замысла, а не отдельный проект.</p>
+      </div>
+    </li>
+    <li class="process__item" data-reveal>
+      <span class="process__num">04</span>
+      <div class="process__content">
+        <h3>Визуализация</h3>
+        <p>Пространство становится видимым до начала работ: свет, тени, высота деревьев через десять лет — решение принимается с полным пониманием результата.</p>
+      </div>
+    </li>
+    <li class="process__item" data-reveal>
+      <span class="process__num">05</span>
+      <div class="process__content">
+        <h3>Рабочая документация</h3>
+        <p>Каждый узел — от дренажа до крепления камня — фиксируется с точностью, которая исключает интерпретации на площадке.</p>
+      </div>
+    </li>
+    <li class="process__item" data-reveal>
+      <span class="process__num">06</span>
+      <div class="process__content">
+        <h3>Реализация</h3>
+        <p>Работы ведутся поэтапно, с сохранением существующих деревьев и минимальным вмешательством в естественный рельеф участка.</p>
+      </div>
+    </li>
+    <li class="process__item process__item--close" data-reveal>
+      <span class="process__num">07</span>
+      <div class="process__content">
+        <h3>Авторский надзор</h3>
+        <p>После завершения мы остаёмся частью жизни пространства — наблюдаем, как оно растёт, и вносим поправки по мере того, как меняется сад. Полный цикл — от&nbsp;первого визита на&nbsp;участок до&nbsp;первого сезона в&nbsp;выросшем саду.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ 6. OFFERINGS ============ -->
+<section class="offerings" id="offerings">
+  <div class="offerings__intro">
+    <p class="eyebrow" data-reveal>Пространства</p>
+    <h2 class="section-title" data-reveal>То, что&nbsp;появляется на&nbsp;территории</h2>
+  </div>
+
+  <div class="offerings__grid">
+    <div class="offering-tile offering-tile--large" data-reveal>
+      <div class="gradient-scene gradient-scene--offer-1">
+        <!-- PHOTO SLOT — private garden, dense planting, 1200×1200px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/19.png" data-scene-photo alt="">
+      </div>
+      <div class="offering-tile__label"><h3>Приватные сады</h3></div>
+    </div>
+    <div class="offering-tile" data-reveal>
+      <div class="gradient-scene gradient-scene--offer-2">
+        <!-- PHOTO SLOT — stone terrace, outdoor dining, 900×900px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/20.png" data-scene-photo alt="">
+      </div>
+      <div class="offering-tile__label"><h3>Террасы</h3></div>
+    </div>
+    <div class="offering-tile" data-reveal>
+      <div class="gradient-scene gradient-scene--offer-3">
+        <!-- PHOTO SLOT — infinity/architectural pool, 900×900px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/21.png" data-scene-photo alt="">
+      </div>
+      <div class="offering-tile__label"><h3>Бассейны</h3></div>
+    </div>
+    <div class="offering-tile" data-reveal>
+      <div class="gradient-scene gradient-scene--offer-4">
+        <!-- PHOTO SLOT — still reflecting water feature, 900×900px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/22.png" data-scene-photo alt="">
+      </div>
+      <div class="offering-tile__label"><h3>Водные зеркала</h3></div>
+    </div>
+    <div class="offering-tile" data-reveal>
+      <div class="gradient-scene gradient-scene--offer-5">
+        <!-- PHOTO SLOT — architectural night lighting, 900×900px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/23.png" data-scene-photo alt="">
+      </div>
+      <div class="offering-tile__label"><h3>Вечернее освещение</h3></div>
+    </div>
+    <div class="offering-tile" data-reveal>
+      <div class="gradient-scene gradient-scene--offer-6">
+        <!-- PHOTO SLOT — irrigation/planting detail, 900×900px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/24.png" data-scene-photo alt="">
+      </div>
+      <div class="offering-tile__label"><h3>Автополив</h3></div>
+    </div>
+    <div class="offering-tile" data-reveal>
+      <div class="gradient-scene gradient-scene--offer-7">
+        <!-- PHOTO SLOT — greenery integrated into facade/architecture,
+             900×900px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/25.png" data-scene-photo alt="">
+      </div>
+      <div class="offering-tile__label"><h3>Архитектурное озеленение</h3></div>
+    </div>
+    <div class="offering-tile offering-tile--large" data-reveal>
+      <div class="gradient-scene gradient-scene--offer-8">
+        <!-- PHOTO SLOT — fire pit / evening lounge area, 1200×1200px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/26.png" data-scene-photo alt="">
+      </div>
+      <div class="offering-tile__label"><h3>Зоны отдыха и костровые пространства</h3></div>
+    </div>
+    <div class="offering-tile" data-reveal>
+      <div class="gradient-scene gradient-scene--offer-9">
+        <!-- PHOTO SLOT — outdoor spa/wellness space, 900×900px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/27.png" data-scene-photo alt="">
+      </div>
+      <div class="offering-tile__label"><h3>SPA-пространства</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. OWNER STORIES ============ -->
+<section class="stories" id="stories">
+  <div class="stories__intro">
+    <p class="eyebrow" data-reveal>Истории владельцев</p>
+    <h2 class="section-title" data-reveal>Что изменилось после&nbsp;завершения</h2>
+  </div>
+
+  <div class="stories__carousel" data-carousel>
+    <div class="stories__track" data-carousel-track>
+      <div class="story-slide" data-carousel-slide>
+        <div class="story-slide__media"><div class="gradient-scene gradient-scene--story-1">
+          <!-- PHOTO SLOT — morning terrace scene, portrait, 1200×1500px+ -->
+          <img class="gradient-scene__photo is-loaded" src="img/28.png" data-scene-photo alt="">
+        </div></div>
+        <blockquote class="story-slide__quote">
+          <p>Мы перестали ездить отдыхать. Утро на террасе стало важнее любой поездки.</p>
+          <cite>Резиденция «Тихий периметр»</cite>
+        </blockquote>
+      </div>
+      <div class="story-slide" data-carousel-slide>
+        <div class="story-slide__media"><div class="gradient-scene gradient-scene--story-2">
+          <!-- PHOTO SLOT — family by water feature, portrait, 1200×1500px+ -->
+          <img class="gradient-scene__photo is-loaded" src="img/29.png" data-scene-photo alt="">
+        </div></div>
+        <blockquote class="story-slide__quote">
+          <p>Дети выросли у этой воды. Теперь они хотят такой же двор для своих детей.</p>
+          <cite>Резиденция «Зеркало и камень»</cite>
+        </blockquote>
+      </div>
+      <div class="story-slide" data-carousel-slide>
+        <div class="story-slide__media"><div class="gradient-scene gradient-scene--story-3">
+          <!-- PHOTO SLOT — evening courtyard fire scene, portrait, 1200×1500px+ -->
+          <img class="gradient-scene__photo is-loaded" src="img/30.png" data-scene-photo alt="">
+        </div></div>
+        <blockquote class="story-slide__quote">
+          <p>Каждый двор живёт своей жизнью. Мы просто выбираем, в каком времени суток хотим быть.</p>
+          <cite>Резиденция «Три двора»</cite>
+        </blockquote>
+      </div>
+    </div>
+    <div class="stories__nav">
+      <button class="stories__arrow magnetic" data-magnetic data-carousel-prev aria-label="Предыдущая история">
+        <svg width="22" height="10" viewBox="0 0 22 10" fill="none" aria-hidden="true"><path d="M21 5H1M1 5L5 1M1 5L5 9" stroke="currentColor" stroke-width="1"/></svg>
+      </button>
+      <div class="stories__dots" data-carousel-dots></div>
+      <button class="stories__arrow magnetic" data-magnetic data-carousel-next aria-label="Следующая история">
+        <svg width="22" height="10" viewBox="0 0 22 10" fill="none" aria-hidden="true"><path d="M1 5H21M21 5L17 1M21 5L17 9" stroke="currentColor" stroke-width="1"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. STUDIO ============ -->
+<section class="studio" id="studio">
+  <div class="studio__media" data-parallax="0.08" data-reveal-media>
+    <div class="gradient-scene gradient-scene--studio">
+      <!-- PHOTO SLOT — studio interior, stone samples/scale models on a
+           table, 1600×2000px+ -->
+      <img class="gradient-scene__photo is-loaded" src="img/31.png" data-scene-photo alt="">
+    </div>
+  </div>
+  <div class="studio__content">
+    <p class="eyebrow" data-reveal>Студия</p>
+    <h2 class="section-title" data-reveal>Место, где рождается&nbsp;пространство</h2>
+    <p class="studio__text" data-reveal>
+      Образцы камня, привезённые с трёх континентов. Макеты в масштабе 1:50,
+      по которым видно, куда упадёт тень в июле. Переговорная с видом
+      на внутренний двор — мы проектируем тишину в тишине.
+    </p>
+    <div class="studio__grid">
+      <div class="studio__tile" data-reveal-media><div class="gradient-scene gradient-scene--studio-1">
+        <!-- PHOTO SLOT — stone material samples, 900×1200px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/32.png" data-scene-photo alt="">
+      </div></div>
+      <div class="studio__tile" data-reveal-media><div class="gradient-scene gradient-scene--studio-2">
+        <!-- PHOTO SLOT — scale model detail, 900×1200px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/33.png" data-scene-photo alt="">
+      </div></div>
+      <div class="studio__tile" data-reveal-media><div class="gradient-scene gradient-scene--studio-3">
+        <!-- PHOTO SLOT — sketch/drawing desk detail, 900×1200px+ -->
+        <img class="gradient-scene__photo is-loaded" src="img/34.png" data-scene-photo alt="">
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="faq__intro">
+    <p class="eyebrow" data-reveal>Вопросы</p>
+    <h2 class="section-title" data-reveal>Прежде чем&nbsp;мы&nbsp;встретимся</h2>
+  </div>
+
+  <div class="faq__list">
+    <div class="faq-item" data-accordion>
+      <button class="faq-item__trigger" data-accordion-trigger aria-expanded="false">
+        <span>С какой площади участка вы работаете</span>
+        <span class="faq-item__icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-item__panel" data-accordion-panel>
+        <p>Мы рассматриваем территории от 15 соток — пространства, где ландшафт способен стать полноценным продолжением архитектуры дома, а не просто его окружением.</p>
+      </div>
+    </div>
+    <div class="faq-item" data-accordion>
+      <button class="faq-item__trigger" data-accordion-trigger aria-expanded="false">
+        <span>Сколько длится создание пространства</span>
+        <span class="faq-item__icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-item__panel" data-accordion-panel>
+        <p>От исследования участка до авторского надзора за реализацией процесс занимает от нескольких месяцев до полутора лет — в зависимости от масштаба территории и сложности рельефа.</p>
+      </div>
+    </div>
+    <div class="faq-item" data-accordion>
+      <button class="faq-item__trigger" data-accordion-trigger aria-expanded="false">
+        <span>Вы работаете с существующим домом или только с новым строительством</span>
+        <span class="faq-item__icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-item__panel" data-accordion-panel>
+        <p>Оба сценария возможны. При работе с существующей резиденцией мы уделяем особое внимание тому, как ландшафт может исправить или усилить уже сложившуюся архитектуру.</p>
+      </div>
+    </div>
+    <div class="faq-item" data-accordion>
+      <button class="faq-item__trigger" data-accordion-trigger aria-expanded="false">
+        <span>Кто остаётся с проектом после завершения работ</span>
+        <span class="faq-item__icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-item__panel" data-accordion-panel>
+        <p>Автор проекта. Мы наблюдаем, как пространство растёт и меняется в первые сезоны, и вносим поправки — сад невозможно завершить в один момент времени.</p>
+      </div>
+    </div>
+    <div class="faq-item" data-accordion>
+      <button class="faq-item__trigger" data-accordion-trigger aria-expanded="false">
+        <span>Как начинается работа над участком</span>
+        <span class="faq-item__icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-item__panel" data-accordion-panel>
+        <p>С разговора о том, как вы хотите жить на этой территории — не со списка растений и материалов, а со сценариев вашего дня.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. FINAL SCREEN ============ -->
+<section class="finale">
+  <div class="finale__media" data-parallax="0.1">
+    <div class="gradient-scene gradient-scene--finale">
+      <!-- PHOTO SLOT — night garden, architectural lighting, full-bleed,
+           2400×1600px+ -->
+      <img class="gradient-scene__photo is-loaded" src="img/35.png" data-scene-photo alt="">
+    </div>
+    <div class="finale__veil"></div>
+  </div>
+  <div class="finale__content">
+    <h2 class="finale__title" data-reveal>
+      Дом заканчивается не стенами.<br>
+      Он продолжается там, где&nbsp;начинается ваш сад.
+    </h2>
+    <div class="finale__actions" data-reveal>
+      <a href="#contact" class="btn btn--outline-light magnetic" data-magnetic>
+        <span>Обсудить проект</span>
+      </a>
+      <a href="#contact" class="btn btn--solid-light magnetic" data-magnetic>
+        <span>Назначить встречу</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact__inner">
+    <div class="contact__col">
+      <p class="eyebrow" data-reveal>Контакты</p>
+      <h2 class="section-title" data-reveal>Расскажите нам&nbsp;об&nbsp;участке</h2>
+      <p class="contact__text" data-reveal>
+        Оставьте контакты — мы свяжемся, чтобы назначить встречу
+        и обсудить территорию, о которой идёт речь.
+      </p>
+
+      <dl class="contact__details">
+        <div data-reveal>
+          <dt>Телефон</dt>
+          <dd><a href="tel:+70000000000">+7&nbsp;(000)&nbsp;000-00-00</a></dd>
+        </div>
+        <div data-reveal>
+          <dt>Email</dt>
+          <dd><a href="mailto:studio@silentestate.ru">studio@silentestate.ru</a></dd>
+        </div>
+        <div data-reveal>
+          <dt>Студия</dt>
+          <dd>Москва, по&nbsp;предварительной записи</dd>
+        </div>
+        <div data-reveal>
+          <dt>Социальные сети</dt>
+          <dd class="contact__social">
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+            <a href="#">Behance</a>
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <form class="contact__form" data-reveal aria-label="Форма связи">
+      <div class="field">
+        <input type="text" id="name" name="name" required placeholder=" ">
+        <label for="name">Имя</label>
+      </div>
+      <div class="field">
+        <input type="tel" id="phone" name="phone" required placeholder=" ">
+        <label for="phone">Телефон</label>
+      </div>
+      <div class="field">
+        <input type="text" id="location" name="location" placeholder=" ">
+        <label for="location">Расположение и площадь участка</label>
+      </div>
+      <div class="field">
+        <textarea id="message" name="message" rows="3" placeholder=" "></textarea>
+        <label for="message">О чём хотите рассказать</label>
+      </div>
+      <button type="submit" class="btn btn--solid magnetic" data-magnetic>
+        <span>Отправить</span>
+      </button>
+    </form>
+  </div>
+
+  <div class="contact__map" role="img" aria-label="Карта расположения студии">
+    <!-- This should become a real embedded map (e.g. an <iframe> map embed)
+         rather than a photo slot — the gradient below is a placeholder
+         until that's wired in. -->
+    <div class="gradient-scene gradient-scene--map">
+  <img class="gradient-scene__photo is-loaded" src="img/36.png" alt="">
+    </div>
+  </div>
+
+  <div class="contact__foot">
+    <span>© 2026 Silent Estate</span>
+    <span>Ландшафтная архитектура частных резиденций</span>
+  </div>
+</section>
+
+</main>
+
+<script src="LandscapeStudio.js"></script>
+</body>
+</html>
